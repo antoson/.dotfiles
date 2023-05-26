@@ -32,3 +32,4 @@
 [alias]
     cm = commit -m
     s = status
+	st = status -sb
