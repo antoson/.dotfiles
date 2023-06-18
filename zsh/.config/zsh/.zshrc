@@ -14,7 +14,7 @@ setopt hist_find_no_dups
 . "$HOME/.cargo/env"
 
 # Case insensitive completion
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # Aliases
