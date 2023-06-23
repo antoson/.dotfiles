@@ -35,4 +35,4 @@ eval "$(zoxide init zsh)"
 # Starship.rs
 eval "$(starship init zsh)"
 
-source /home/ondra/.config/broot/launcher/bash/br
+source "$HOME/.config/broot/launcher/bash/br"
