@@ -10,6 +10,7 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+setopt hist_ignore_space
 bindkey -e
 
 . "$HOME/.cargo/env"
@@ -25,6 +26,7 @@ alias l='ls -CF'
 alias vim='nvim'
 alias ncspot='flatpak run io.github.hrkfdn.ncspot'
 alias rm='echo use trash!'
+alias week='date +%V'
 
 [ -f ./.fzf.zsh ] && source ./.fzf.zsh
 
@@ -36,4 +38,5 @@ eval "$(zoxide init zsh)"
 # Starship.rs
 eval "$(starship init zsh)"
 
-source "$HOME/.config/broot/launcher/bash/br"
+
+source "$HOME/.plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
