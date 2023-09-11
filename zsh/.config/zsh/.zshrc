@@ -38,5 +38,5 @@ eval "$(zoxide init zsh)"
 # Starship.rs
 eval "$(starship init zsh)"
 
-
+# Must be at the end
 source "$HOME/.plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
