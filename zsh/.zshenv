@@ -11,4 +11,7 @@ export VISUAL="nvim"
 if [ -d "$HOME/.local/bin" ] ; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
+
 . "$HOME/.cargo/env"
+
+export PATH="${PATH:+${PATH}:}/usr/local/go/bin" 
