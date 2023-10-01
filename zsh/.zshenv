@@ -15,3 +15,6 @@ fi
 . "$HOME/.cargo/env"
 
 export PATH="${PATH:+${PATH}:}/usr/local/go/bin" 
+
+export GOPATH="$HOME/.go"
+
