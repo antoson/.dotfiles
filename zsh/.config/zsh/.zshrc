@@ -11,13 +11,23 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 setopt hist_ignore_space
+
+# Emacs mode
 bindkey -e
 
 . "$HOME/.cargo/env"
 
-# Case insensitive completion
+zmodload zsh/complist
 autoload -Uz compinit && compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+_comp_options+=(globdots) # Include hidden files
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # Case insensitive comp
+
+# Vim motions for completion menu navigation
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char 
 
 # Aliases
 alias ll='ls -alF'
