@@ -34,8 +34,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias vim='nvim'
-alias ncspot='flatpak run io.github.hrkfdn.ncspot'
-alias rm='echo use trash!'
 alias week='date +%V'
 
 [ -f ./.fzf.zsh ] && source ./.fzf.zsh
