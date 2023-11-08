@@ -14,7 +14,7 @@ end
 
 -- For example, changing the color scheme:
 config.color_scheme = 'Tokyo Night'
-config.font_size = 16.0
+config.font_size = 12.0
 
 -- You can shove your bell up your bum
 config.audible_bell = 'Disabled'
