@@ -30,6 +30,12 @@
     cm = commit -m
     s = status
     st = status -sb
+    # Thanks TJ
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 
 [pull]
     rebase = merges
+
+[rebase]
+  autoStash = true
+
