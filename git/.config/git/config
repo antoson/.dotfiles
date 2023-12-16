@@ -2,9 +2,6 @@
     name = Ondrej Antos
     email = little.joy3080@fastmail.com
 
-[init]
-    defaultBranch = main
-
 [push]
     autoSetupRemote = true
 
