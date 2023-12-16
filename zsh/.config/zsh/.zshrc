@@ -35,6 +35,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias vim='nvim'
 alias week='date +%V'
+alias pn='pnpm'
 
 [ -f ./.fzf.zsh ] && source ./.fzf.zsh
 
@@ -45,6 +46,17 @@ eval "$(zoxide init zsh)"
 
 # Starship.rs
 eval "$(starship init zsh)"
+
+# pnpm
+export PNPM_HOME="/home/oantos/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Lua
+export PATH="$HOME/.luarocks/bin:$PATH"
 
 # Must be at the end
 source "$HOME/.plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
