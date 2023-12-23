@@ -22,6 +22,9 @@ config.audible_bell = 'Disabled'
 -- tabs me no likey >:(
 config.enable_tab_bar = false
 
+-- it's free real estate ;)
+config.window_decorations = 'RESIZE'
+
 -- zen-mode.nvim integration
 wezterm.on('user-var-changed', function(window, pane, name, value)
     local overrides = window:get_config_overrides() or {}
