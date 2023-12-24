@@ -152,5 +152,7 @@ fi
 export PATH="${PATH:+${PATH}:}/usr/local/go/bin" 
 export GOPATH="$HOME/.go"
 
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 eval "$(starship init bash)"
 
